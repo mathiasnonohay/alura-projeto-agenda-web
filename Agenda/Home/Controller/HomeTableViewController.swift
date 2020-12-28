@@ -118,7 +118,6 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate {
         celula.tag = indexPath.row
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(abrirActionSheet(_:)))
         let aluno = alunos[indexPath.row]
-        
         celula.configuraCelula(aluno)
         celula.addGestureRecognizer(longPress)
         
